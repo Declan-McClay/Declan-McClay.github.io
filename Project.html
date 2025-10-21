@@ -1,44 +1,42 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
-	<title>My Web</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="styles.css">
+	    <title>My Web</title>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <link rel="stylesheet" href="styles.css">
     </head>
     <body class = "w3-paper">
 	<!-- Navbar -->
-	<div class="w3-bar w3-blue-grey">
-	    <a href="Home.html" class="w3-bar-item w3-button">Home</a>
+	    <div class="w3-bar w3-blue-grey">
+	      <a href="Home.html" class="w3-bar-item w3-button">Home</a>
   	    <a href="Project.html" class="w3-bar-item w3-button w3-hide-small">Projects</a>
-	    <a href="#" class="w3-bar-item w3-button w3-hide-small">Skills</a>
+	      <a href="#" class="w3-bar-item w3-button w3-hide-small">Skills</a>
    	    <a href="#" class="w3-bar-item w3-button w3-hide-small">CV</a>
 	    
 
-	    <!-- Mobile menu button -->
+	      <!-- Mobile menu button -->
   	    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="toggleMobileMenu()">&#9776;</a>
-	    <button id="darkModeToggle" class="w3-bar-item w3-button w3-right">
-  🌙 Dark Mode
-	    </button>	
-	</div>
-	<!-- Mobile menu button -->
-	<div id="mobileMenu" class="w3-bar-block w3-blue-grey w3-hide w3-hide-large w3-hide-medium">
+	      <button id="darkModeToggle" class="w3-bar-item w3-button w3-right">🌙 Dark Mode</button>	
+	    </div>
+	      <!-- Mobile menu button -->
+	    <div id="mobileMenu" class="w3-bar-block w3-blue-grey w3-hide w3-hide-large w3-hide-medium">
   	    <a href="Project.html" class="w3-bar-item w3-button">Projects</a>
   	    <a href="#" class="w3-bar-item w3-button">Skills</a>
-	    <a href="#" class="w3-bar-item w3-button">CV</a>
-	</div>
+	      <a href="#" class="w3-bar-item w3-button">CV</a>
+	    </div>
 		
 	<!-- Content -->
-	<div class="w3-container w3-padding-64">
+	  <div class="w3-container w3-padding-64">
       <h1 class="w3-text-blue-grey w3-center">Work Samples &amp; Projects</h1>
       <p class="w3-center w3-large" style="max-width:800px;margin:auto;">
         Below are examples of my recent technical work, showcasing both my problem-solving approach and the tools I use to bring ideas to life.
       </p>
 
-      <div class="w3-row-padding w3-padding-32">
+      <div class="w3-row-padding w3-padding-32 w3-container" style="display: flex; flex-wrap: wrap; gap: 16px; justify-content: center;">
 
         <!-- Project 1: Portfolio Website -->
-        <div class="w3-third w3-margin-bottom">
+        <div class="w3-card-container" style="flex: 1 1 300px; max-width: 400px;">
           <div class="w3-card-4 w3-white w3-hover-shadow">
             <div class="w3-container w3-blue-grey">
               <h3>Personal Portfolio Website</h3>
@@ -46,22 +44,19 @@
             <div class="w3-container">
               <p><b>Description:</b> A fully responsive personal portfolio designed and coded from scratch to present my professional profile, skills, and projects.</p>
               <p><b>Technologies:</b> HTML, CSS (W3.CSS), JavaScript</p>
-              <p><b>My Role:</b> Sole developer — responsible for layout design, responsive structure, dark mode functionality, and site deployment.</p>
+              <p><b>My Role:</b> Sole developer - responsible for layout design, responsive structure, dark mode functionality, and site deployment.</p>
               <p><b>Challenges:</b> Integrating dark mode persistence using <code>localStorage</code> and ensuring accessibility across devices.</p>
        	      <div class="w3-center w3-padding-small">
-		<img src= "images/portfolio.png" alt="Portfolio Image" style ="width:100%;max-height:180px;object-fit:cover;border-radius:4px;">
-        	<p class="w3-margin-top">
-		<a href="https://github.com/YourUsername/portfolio" target="_blank"
-             class="w3-button w3-blue-grey w3-round-large"> 🔗  GitHub<a>
-        </div>
+		            <img src= "images/portfolio.png" alt="Portfolio Image" style ="width:100%;max-height:180px;object-fit:cover;border-radius:4px;">
+        	      <p class="w3-margin-top">
+		            <a href="https://github.com/Declan-McClay/Declan-McClay.github.io" target="_blank" class="w3-button w3-blue-grey w3-round-large"> 🔗  GitHub</a></p>
+              </div>
+            </div>
           </div>
-        </div>
-	    </div>
-          </div>
-        </div>
+	      </div>
 
         <!-- Project 2: Project Euler Challenges -->
-        <div class="w3-third w3-margin-bottom">
+        <div class="w3-card-container" style="flex: 1 1 300px; max-width: 400px;">
           <div class="w3-card-4 w3-white w3-hover-shadow">
             <div class="w3-container w3-blue-grey">
               <h3>Project Euler Problem Solving</h3>
@@ -76,7 +71,7 @@
         </div>
 
         <!-- Project 3: Placeholder for Financial Project -->
-        <div class="w3-third w3-margin-bottom">
+        <div class="w3-card-container" style="flex: 1 1 300px; max-width: 400px;">
           <div class="w3-card-4 w3-white w3-hover-shadow">
             <div class="w3-container w3-blue-grey">
               <h3>Financial Data Analysis (Upcoming)</h3>
