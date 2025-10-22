@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Skills — Declan McClay</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body class="w3-paper">
+    <!-- Navbar -->
+    <div class="w3-bar w3-blue-grey">
+      <a href="Home.html" class="w3-bar-item w3-button">Home</a>
+      <a href="Project.html" class="w3-bar-item w3-button w3-hide-small">Projects</a>
+      <a href="Skills.html" class="w3-bar-item w3-button w3-hide-small w3-blue-grey w3-hover-blue">Skills</a>
+      <a href="CV.html" class="w3-bar-item w3-button w3-hide-small">CV</a>
+
+      <!-- Mobile menu button -->
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="toggleMobileMenu()">&#9776;</a>
+      <button id="darkModeToggle" class="w3-bar-item w3-button w3-right">🌙 Dark Mode</button>	
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="w3-bar-block w3-blue-grey w3-hide w3-hide-large w3-hide-medium">
+      <a href="Home.html" class="w3-bar-item w3-button">Home</a>
+      <a href="Project.html" class="w3-bar-item w3-button">Projects</a>
+      <a href="Skills.html" class="w3-bar-item w3-button">Skills</a>
+      <a href="CV.html" class="w3-bar-item w3-button">CV</a>
+    </div>
+
+    <!-- Main Content -->
+    <main class="w3-container w3-padding-64">
+      <h1 class="w3-text-blue-grey w3-center">Technical &amp; Transferable Skills</h1>
+      <p class="w3-center w3-large" style="max-width:800px;margin:auto;">
+        This section highlights both my technical expertise and transferable skills — demonstrating not just what I can do, but how I work.
+      </p>
+
+      <!-- Technical Skills -->
+      <section class="w3-padding-32">
+        <h2 class="w3-text-blue-grey">Technical Skills</h2>
+        <div class="w3-row-padding w3-margin-top">
+
+          <!-- Coding / Development -->
+          <div class="w3-half w3-margin-bottom">
+            <div class="w3-card-4 w3-white w3-hover-shadow">
+              <div class="w3-container w3-blue-grey">
+                <h3>Software Development</h3>
+              </div>
+              <div class="w3-container">
+                <p><b>Languages:</b> Golang, Python, SQL, HTML, CSS, JavaScript</p>
+                <p><b>Tools & Frameworks:</b> W3.CSS, Git, GitHub, VS Code</p>
+                <p><b>Example:</b></p>
+                <pre style="background:#f4f4f4;padding:8px;border-radius:4px;overflow-x:auto;">
+<span style="color:#555">// Simple Go function for compound interest</span>
+func CompoundInterest(principal, rate, years float64) float64 {
+    return principal * math.Pow(1+rate/100, years)
+}
+                </pre>
+                <p class="w3-margin-top">
+                  <a href="https://github.com/Declan-McClay" target="_blank" class="w3-button w3-blue-grey w3-round-large">🔗 GitHub Profile</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Data & Analysis -->
+          <div class="w3-half w3-margin-bottom">
+            <div class="w3-card-4 w3-white w3-hover-shadow">
+              <div class="w3-container w3-blue-grey">
+                <h3>Data Handling &amp; Analysis</h3>
+              </div>
+              <div class="w3-container">
+                <p><b>Skills:</b> Data manipulation using SQL and R; structuring datasets for efficient access; creating visual outputs.</p>
+                <p><b>Example (R):</b></p>
+                <pre style="background:#f4f4f4;padding:8px;border-radius:4px;overflow-x:auto;">
+# Summarising a financial dataset
+library(dplyr)
+summary <- portfolio %>%
+  group_by(Sector) %>%
+  summarise(Average_Return = mean(Return, na.rm = TRUE))
+                </pre>
+                <p class="w3-margin-top">Developed ability to analyse and interpret structured data — skills directly applicable to quantitative development roles.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Transferable Skills -->
+      <section class="w3-padding-32">
+        <h2 class="w3-text-blue-grey">Transferable Skills</h2>
+        <div class="w3-row-padding w3-margin-top">
+
+          <!-- Communication -->
+          <div class="w3-third w3-margin-bottom">
+            <div class="w3-card-4 w3-white w3-hover-shadow">
+              <div class="w3-container w3-blue-grey">
+                <h3>Communication</h3>
+              </div>
+              <div class="w3-container">
+                <p>Delivered clear technical explanations during team discussions and coursework reviews. My ability to explain complex ideas in simple terms helped streamline debugging and improve collaboration.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Teamwork -->
+          <div class="w3-third w3-margin-bottom">
+            <div class="w3-card-4 w3-white w3-hover-shadow">
+              <div class="w3-container w3-blue-grey">
+                <h3>Teamwork</h3>
+              </div>
+              <div class="w3-container">
+                <p>Collaborated effectively within project management group “Team Horizon” during my A2 coursework, balancing roles across planning, development, and reporting under time constraints.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Problem Solving -->
+          <div class="w3-third w3-margin-bottom">
+            <div class="w3-card-4 w3-white w3-hover-shadow">
+              <div class="w3-container w3-blue-grey">
+                <h3>Problem Solving</h3>
+              </div>
+              <div class="w3-container">
+                <p>Used structured debugging methods and incremental testing to identify validation errors during database form development, maintaining motivation through analytical problem breakdown.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+    <!-- External Script -->
+    <script src="scripts.js"></script>
+  </body>
+</html>
